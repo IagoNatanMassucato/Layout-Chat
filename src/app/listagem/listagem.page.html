@@ -1,0 +1,102 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+    
+      </ion-buttons>
+      <ion-buttons slot="secondary">
+        <ion-button>
+          <ion-icon slot="icon-only" name="search-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Mensagens</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Steve Jobs</h2>
+      <h3>Empresário e magnata americano no setor da informática</h3>
+      <p>Preciso que você venha formatar meu pc urgente !!!</p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/200px-Bill_Gates_2018.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Bill Gates</h2>
+      <h3>Fundador da Microsoft</h3>
+      <p>Fiquei sabendo que você prefere Windows do que Linux ?</p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="http://s.glbimg.com/po/tt/f/original/2012/04/20/linus_torvalds.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2> Linus Torvalds</h2>
+      <h3>Criador do Linux</h3>
+      <p>A Linux precisa de alguém como você na equipe </p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://rockcontent.com/br/wp-content/uploads/sites/2/2017/04/quem-inventou-o-facebook-1.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2> Mark Zuckerberg</h2>
+      <h3>Fundador do Facebook</h3>
+      <p>Posso te mostrar a nova atualização do Face para ver oque vc acha?</p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-58xSdNT-KNKoLs3Ycg8Lp51KWRdi3N7ljQ&usqp=CAU">
+    </ion-avatar>
+    <ion-label>
+      <h2>Walter Elias Disney</h2>
+      <h3>Fundador da Disney</h3>
+      <p>Pare de programar e venha para o mundo do designer</p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://uploads.metropoles.com/wp-content/uploads/2020/12/25183119/Sargento-Fahur-600x400.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Sargento Fahur</h2>
+      <h3>Com ele ninguém passa reto</h3>
+      <p>Se precisar de um segurança é só chamar</p>
+    </ion-label>
+    <ion-icon name="star-outline" size="small" slot="end"></ion-icon> 
+  </ion-item>
+
+</ion-list>
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="danger">
+    <ion-icon name="pencil-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab horizontal="start" vertical="bottom" slot="fixed">
+  <ion-fab-button [routerLink]="'/home'" expand="block" shape="round">
+  Voltar
+  </ion-fab-button>
+</ion-fab>
+</ion-content>
